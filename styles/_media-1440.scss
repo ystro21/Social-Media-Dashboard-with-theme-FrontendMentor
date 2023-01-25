@@ -1,0 +1,46 @@
+@media (min-width: 1440px){
+    .container{
+        width: 77%;
+
+        margin: 1.6% auto;
+
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+
+            h1{
+                font-size: 2.8rem;
+            }
+
+            .hr{
+                display: none;
+            }
+
+            .theme-switcher{
+                .switcher{
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .wrapper{
+            flex-direction: row;
+            flex-wrap: unset;
+            gap: 3rem;
+            margin: 4.8rem 0 4.2rem 0;
+        }
+
+        .wrapper-daily{
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: space-between;
+
+             .card{
+                width: 23%;
+             }
+        }
+    }
+}

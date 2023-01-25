@@ -1,0 +1,245 @@
+.container {
+	width: 87%;
+	min-height: 100vh;
+	margin: 6% auto;
+
+	header {
+		h1 {
+			font-size: 2.4rem;
+			padding: 1rem 0 0.4rem 0;
+			color: var(--text-2);
+		}
+
+		.header-text {
+			color: var(--text-1);
+			font-size: 1.43rem;
+			font-weight: 700;
+		}
+
+		.hr {
+			width: 100%;
+			height: 1px;
+			background-color: var(--text-1);
+			margin: 2.4rem 0 1.6rem 0;
+		}
+
+		.theme-switcher {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.switcher {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				border-radius: 2rem;
+				background: var(--toggle);
+				padding: 3px;
+				min-width: 4.5rem;
+                cursor: pointer;
+
+                &:hover{
+				    background: var(--toggle-hover);
+                }
+
+				.ball {
+					width: 1.8rem;
+					height: 1.8rem;
+					background-color: var(--card-bg);
+					border-radius: 1rem;
+				}
+			}
+
+			.dark {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	.wrapper {
+		margin: 4rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2.2rem;
+
+		.card {
+			background-color: var(--card-bg);
+			border-radius: 0.5rem;
+			overflow: hidden;
+			width: 100%;
+
+			.card-header {
+				height: 4px;
+			}
+
+			.facebook {
+				background-color: $facebook;
+			}
+
+			.twitter {
+				background-color: $twitter;
+			}
+
+			.instagram {
+				background-image: $instagram;
+			}
+
+			.youtube {
+				background-color: $youtube;
+			}
+
+			.card-body {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 2.8rem;
+                transition: background-color .3s;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: var(--bg-hover);
+                }
+
+				.h-box {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.v-box {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 2rem 0 2.5rem 0;
+				}
+
+				.nickName {
+					color: var(--text-1);
+					font-size: 1.2rem;
+					font-weight: 700;
+					margin-left: 0.8rem;
+				}
+
+				.followers-count {
+					font-size: 5.4rem;
+					font-weight: 700;
+					color: var(--text-2);
+				}
+
+				.followers-text {
+					font-size: 1.2rem;
+					text-transform: uppercase;
+					color: var(--text-1);
+					letter-spacing: 0.5rem;
+				}
+
+				.daily-changes {
+					font-size: 1.2rem;
+					font-weight: 700;
+					margin-left: 0.2rem;
+				}
+
+				.plus {
+					color: $lime-green;
+				}
+
+				.minus {
+					color: $bright-red;
+				}
+			}
+		}
+	}
+
+    .overview {
+        color: var(--text-1);
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .wrapper-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.6rem;
+        gap: 1.8rem;
+
+        .card{
+            background-color: var(--card-bg);
+            width: 100%;
+            padding: 2.6rem 3rem 2.6rem 2rem;
+            border-radius: .5rem;
+            transition: background-color .3s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: var(--bg-hover);
+            }
+        }
+
+        .v-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .h-box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                .titel{
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    color: var(--text-1);
+                }
+            }
+
+            .h-box-2{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 100%;
+
+                .value{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: var(--text-2);
+                }
+            }
+
+            .h-box-3{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 0.5rem;
+
+                .daily-changes{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-left: 0.5rem;
+                }
+
+                .plus{
+                    color: $lime-green;
+                }
+
+                .minus{
+                    color: $bright-red;
+                }
+            }
+        }
+    }
+}
+
